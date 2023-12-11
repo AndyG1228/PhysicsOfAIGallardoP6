@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,9 @@ public class VelocityDrive : MonoBehaviour
 {
     public float speed = 10.0f;
     public float rotationSpeed = 100.0f;
+    public Transform transGun;
+    public Transform barrel;
+    public GameObject bulletObj;
 
     void Update()
     {
@@ -24,5 +28,20 @@ public class VelocityDrive : MonoBehaviour
 
         // Rotate around our y-axis
         transform.Rotate(0, rotation, 0);
+
+        if (Input.GetKey(KeyCode.T))
+        {
+            transGun.RotateAround(transGun.position, transGun.right, -2);
+        }
+
+        else if(Input.GetKey(KeyCode.G))
+        {
+            transGun.RotateAround(transGun.position, transGun.right, 2);
+        }
+
+        /*else if(Input.GetKey(KeyCode.B))
+        {
+            Instantiate(bulletObj, barrel.position, barrel.rotation)
+        }*/
     }
 }
