@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 2258607800309988572}
   - component: {fileID: 7062534188752701162}
   - component: {fileID: 3548730986309351955}
-  - component: {fileID: 6207463892871635247}
   - component: {fileID: 7609231275613881662}
-  - component: {fileID: 6761859408565441052}
   - component: {fileID: 2409057882714849725}
   - component: {fileID: -502403001312071717}
+  - component: {fileID: -8812979315398422536}
   m_Layer: 0
-  m_Name: VelocityShell
+  m_Name: GreenShell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,18 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6207463892871635247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2955335570235182799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8b80c39565ab346ab656661f31f258, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &7609231275613881662
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -114,19 +101,6 @@ CapsuleCollider:
   m_Height: 0.65
   m_Direction: 2
   m_Center: {x: 0, y: 0.000000007450581, z: 0.17}
---- !u!114 &6761859408565441052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2955335570235182799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a460c8290e014c3caa73ba461ac9a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 195792, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}
 --- !u!114 &2409057882714849725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,3 +129,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8812979315398422536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955335570235182799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a426c3507c950bf42ac012ae5d61bd99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 195792, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}

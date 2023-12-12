@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class VelocityMoveShell : MonoBehaviour
 {
-    float speed = 1.0f;
+    float speed = 3.0f;
 
     // Start is called before the first frame update
     void Start()

@@ -39,9 +39,9 @@ public class VelocityDrive : MonoBehaviour
             transGun.RotateAround(transGun.position, transGun.right, 2);
         }
 
-        /*else if(Input.GetKey(KeyCode.B))
+        else if(Input.GetKeyDown(KeyCode.B))
         {
-            Instantiate(bulletObj, barrel.position, barrel.rotation)
-        }*/
+            Instantiate(bulletObj, barrel.position, barrel.rotation);
+        }
     }
 }
